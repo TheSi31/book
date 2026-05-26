@@ -15,7 +15,7 @@ export default function Home() {
 
   const handleTheory = () => {
     setActiveSection("Теория");
-    setSelectedTopic(null);   // возвращаем колесо
+    setSelectedTopic(null);
   };
 
   const handleExperiments = () => {
@@ -33,10 +33,10 @@ export default function Home() {
 
   const handleQuarterClick = (index: number) => {
     setActiveQuarter(index);
-    // По индексу определяем название раздела
-    const topics = ["Механика", "Термодинамика", "Электродинамика", "Оптика"];
+    // Исправлено: новые названия разделов
+    const topics = ["Кинематика", "Динамика", "Статика", "Законы сохранения"];
     setSelectedTopic(topics[index]);
-    setActiveSection("Теория"); // остаёмся в теории, но показываем контент
+    setActiveSection("Теория");
   };
 
   const handleBackToWheel = () => {
@@ -58,7 +58,6 @@ export default function Home() {
         />
       );
     }
-    // Для Опытов и Тестов мы открываем внешние ссылки, поэтому сюда не попадаем
     return null;
   };
 

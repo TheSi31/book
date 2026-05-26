@@ -54,7 +54,7 @@ export const QuarterSlice = ({ title, subtitle, color, rotation, index, isActive
           textAnchor="middle"
           dominantBaseline="middle"
           fill="white"
-          fontSize="28"
+          fontSize="24"
           fontWeight="700"
         >
           {title}

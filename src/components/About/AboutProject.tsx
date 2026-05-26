@@ -28,11 +28,11 @@ export const AboutProject = () => {
           textAlign: "left",
         }}
       >
-        «Физика — это наука понимать природу»
-        <div style={{ marginTop: "8px", fontWeight: 500 }}>— Р. Фейнман</div>
+        <div style={{ fontWeight: 500 }}>Разработчик:</div>
+        <div style={{ marginTop: "8px", fontWeight: 500 }}>— Вересов Александр Дмитриевич группа Ф-33(1)</div>
       </div>
       <p style={{ fontSize: "14px", opacity: 0.7 }}>
-        Версия 1.0.0 · Все права защищены
+        Версия 1.0.0 
       </p>
     </div>
   );

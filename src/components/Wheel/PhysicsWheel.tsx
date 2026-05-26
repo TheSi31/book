@@ -3,10 +3,10 @@
 import { QuarterSlice } from "./QuarterSlice";
 
 const quarters = [
-  { title: "Механика", subtitle: "Движение и силы", color: "#4ea1ff", rotation: 0, index: 0 },
-  { title: "Термодинамика", subtitle: "Тепло и молекулы", color: "#7ee081", rotation: 90, index: 1 },
-  { title: "Электродинамика", subtitle: "Ток и поля", color: "#ffb347", rotation: 180, index: 2 },
-  { title: "Оптика", subtitle: "Свет и волны", color: "#b79cff", rotation: 270, index: 3 },
+  { title: "Кинематика", subtitle: "Способы описания движения", color: "#4ea1ff", rotation: 0, index: 0 },
+  { title: "Динамика", subtitle: "Причины движения", color: "#7ee081", rotation: 90, index: 1 },
+  { title: "Статика", subtitle: "Условия равновесия", color: "#ffb347", rotation: 180, index: 2 },
+  { title: "Законы сохранения", subtitle: "Энергия, импульс, момент", color: "#b79cff", rotation: 270, index: 3 },
 ];
 
 type PhysicsWheelProps = {

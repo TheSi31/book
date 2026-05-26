@@ -1,7 +1,9 @@
 "use client";
 
-import { Mechanics } from "@/content/Mechanics";
-import { Thermodynamics } from "@/content/Thermodynamics";
+import { Kinematics } from "../../content/Kinematics";
+import { Dynamics } from "../../content/Dynamics";
+import { Statics } from "../../content/Statics";
+import { ConservationLaws } from "../../content/ConservationLaws";
 
 type TopicContentProps = {
   topic: string;
@@ -14,12 +16,14 @@ export const TopicContent = ({
 }: TopicContentProps) => {
   const renderTopic = () => {
     switch (topic) {
-      case "Механика":
-        return <Mechanics />;
-
-      case "Термодинамика":
-        return <Thermodynamics />;
-
+      case "Кинематика":
+        return <Kinematics />;
+      case "Динамика":
+        return <Dynamics />;
+      case "Статика":
+        return <Statics />;
+      case "Законы сохранения":
+        return <ConservationLaws />;
       default:
         return <div>Раздел не найден</div>;
     }
