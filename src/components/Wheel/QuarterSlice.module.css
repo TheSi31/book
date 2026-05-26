@@ -1,0 +1,72 @@
+.slice {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease,
+    box-shadow 0.3s ease;
+
+  transform-origin: center center;
+
+  overflow: hidden;
+}
+
+.slice::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.2),
+      rgba(255,255,255,0)
+    );
+
+  pointer-events: none;
+}
+
+.slice:hover {
+  filter: brightness(1.15);
+
+  box-shadow:
+    0 0 30px rgba(255,255,255,0.2),
+    0 0 80px rgba(255,255,255,0.15);
+
+  z-index: 5;
+}
+
+.content {
+  position: absolute;
+
+  top: 130px;
+  right: 90px;
+
+  color: white;
+
+  text-align: center;
+
+  pointer-events: none;
+}
+
+.content h2 {
+  font-size: 26px;
+  margin: 0;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.4);
+}
